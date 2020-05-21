@@ -1,0 +1,104 @@
+
+
+body {
+  background-color: #E76F51
+}
+p {
+  font-family: monospace;
+}
+
+.container{
+  padding-top: 100px;
+  padding-bottom: 70px;
+  background-color: #afe3bd;
+}
+
+.thumbnail {
+  display: flex;
+  justify-content: space-around;
+}
+
+.thumbnail li {
+  opacity: 0;
+  list-style: none;
+  flex-direction: column;
+}
+
+.pict {
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  padding: 5px;
+  width: 250px;
+  height: 250px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.descr {
+  display: flex;
+}
+
+.author {
+  padding-top: 7px;
+  padding-left: 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+.icon {
+  margin-top: 5px;
+  border-radius: 50%;
+  width: 35px;
+  height: 35px;
+}
+
+footer {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  color: white;
+  background-color: #E76F51;
+}
+
+.footer-p {
+  font-size: 25px;
+}
+
+.contact {
+  margin-top: 5px;
+}
+
+.contact a {
+  display: flex;
+  flex-direction: column;
+  text-transform: uppercase;
+  font-family: monospace;
+  font-size: 18px;
+  text-decoration: none;
+  color: white;
+}
+
+.contact a:hover {
+  text-decoration: underline;
+}
+
+@media screen and (max-width: 768px) {
+  .thumbnail {
+    flex-direction: column;
+    align-items: center;
+    padding-top: 50px;
+  }
+
+  .thumbnail li {
+    padding-bottom: 40px;
+  }
+}
+
+@keyframes picFadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
